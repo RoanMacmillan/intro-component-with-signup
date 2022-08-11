@@ -15,7 +15,7 @@ html {
 
 h1 {
 
-    font-size: 3.2rem;
+    font-size: 3.4rem;
     font-weight: 700;
     line-height: 3.7rem;
 }
@@ -38,7 +38,7 @@ align-items: center;
 .container {
 
     width: 100%;
-    height: 40rem;
+    height: 44rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ color: white;
 .form-container {
 
     width: 40rem;
-    height: 40rem;
+    height: 44rem;
 
 }
 
@@ -68,11 +68,15 @@ color: white;
 }
 
 .bottom {
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     background-color: white;
-    height: 34rem;
+    height: 32rem;
     border-radius: .5rem;
     box-shadow: 0px 0.45em 0px 0px #df6d6d;
+    text-align: center;
+    padding: 3rem;
 
 }
 
@@ -81,7 +85,7 @@ color: white;
 width: 100%;
 background-color: hsl(248, 32%, 49%);
 color: white;
-font-size: 1.05rem;
+font-size: 1rem;
 font-family: 'Poppins', sans-serif;
 outline: none;
 border: none;
@@ -89,3 +93,104 @@ border-radius: .5rem;
 height: 4rem;
 box-shadow: 0px 0.45em 0px 0px #df6d6d;
 }
+
+
+
+.signup-form input {
+    width: 100%;
+    height: 4rem;
+  font-family: inherit;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+input { box-sizing: border-box; }
+
+#btn2 {
+
+
+    color: white;
+    text-transform:uppercase;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    letter-spacing: 1px;
+    box-shadow: 0px 0.3em 0px 0px #2fb179;
+    cursor: pointer;
+
+}
+
+#btn2:hover {
+
+    box-shadow: 0px 0.3em 0px 0px #38cc8c;
+    background-color: #44e49f;
+}
+
+.terms {
+
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: gray;
+}
+
+#strong {
+
+    color: #ff7a7a;
+}
+
+@media screen and (max-width: 700px) {
+   
+    h1, p {
+
+        text-align: center;
+    }
+
+    h1 {
+
+        font-size: 2.3rem;
+        line-height: 2.9rem;
+
+    }
+
+    p {
+
+        font-size: 1.1rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .heading-container, .form-container {
+
+        width: 25rem;
+        
+    }
+
+    .page-wrapper {
+
+
+
+        margin-bottom: 15rem;
+    }
+
+    .bottom {
+
+        padding: 2rem;
+        height: 30rem;
+    }
+  
+
+    .signup-form input {
+
+        height: 3.5rem;
+    }
+
+    .terms {
+
+        line-height: 1.5rem;
+    }
+
+
+  }
