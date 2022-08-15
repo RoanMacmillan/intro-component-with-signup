@@ -40,24 +40,59 @@
         </div>
 
 
-        <div class="bottom">
-          <form action="#" class="signup-form">
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
-            <input type="text" placeholder="Email Address" required>
-            <input type="text" placeholder="Password" required>
-            <input type="submit" id="btn2" value="Claim your free trial" aria-label="Submit">
+
+        <form name ="myForm" action="#" class="bottom" id="form">
+
+          <div class="sign-up">
+            <input name ="first" type="text" placeholder="First Name" id="firstname" required>
+            <img id="test-img4" class="error-img" src="./images/icon-error.svg" alt="error-icon">
+
+            <small id="test4" class="error-msg">First Name cannot be empty</small>
+          </div>
+
+          <div class="sign-up">
+            <input name="second" type="text" placeholder="Last Name" id="lastname" required>
+            <img id="test-img3" class="error-img" src="./images/icon-error.svg" alt="error-icon">
+
+            <small id="test3" class="error-msg">Last Name cannot be empty</small>
+          </div>
+
+          <div class="sign-up">
+          <input name="third" type="email" placeholder="Email Address" id="email" required>
+          <img id ="test-img2" class="error-img" src="./images/icon-error.svg" alt="error-icon">
+
+          <small id="test2" class="error-msg">This is not a valid Email Adress</small>
+            </div>
+
+            <div class="sign-up">
+          <input name="fourth" type="password" placeholder="Password" id="password" required>
+          <img id="test-img" class="error-img" src="./images/icon-error.svg" alt="error-icon">
+
+          <small id="test" class="error-msg">Password cannot be less than 5 Characters</small>
+              </div>
+
+              <div class="sign-up">
+          <input onclick="validateForm();" name="fifth" type="submit" id="btn2" value="Claim your free trial" aria-label="Submit">
+              </div>
+
+
+        <span class="terms">By clicking the button, you are agreeing to our <strong id="strong">Terms and
+            Services</strong></span>
 
           </form>
 
 
-          <span class="terms">By clicking the button, you are agreeing to our <strong id="strong">Terms and Services</strong></span>
-        </div>
       </div>
 
     </div>
 
   </div>
+
+
+<script src="./script.js"></script>
+
+
+
 
 </body>
 
